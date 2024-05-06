@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="13dp"
+        android:background="@color/white"
+        android:hint="  Miqdorni kiriting"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:gravity="center|start"
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"/>
+
+    <TextView
+        app:layout_constraintBottom_toTopOf="@id/btn"
+        app:layout_constraintTop_toBottomOf="@id/txt"
+        android:inputType="number"
+        android:id="@+id/txt2"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:gravity="center|start"
+        android:layout_marginHorizontal="13dp"
+        android:hint="  So'mda"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"/>
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/btn"
+        android:textStyle="bold"
+        android:text="Hisoblash"
+        android:textSize="19dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
